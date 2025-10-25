@@ -1,0 +1,70 @@
+Git labs tutorials: 10/24/2025
+GitHub Account setup: January 15 2025
+
+https://github.com/jm23dt/assignment2.git
+
+
+Paste the console output you saved at the end of step 3.C (2 points)
+
+Me@Asus MINGW64 /c/Users/ME/jm23dt.github.io/COP4020/assignment2 (master)
+$ mkdir docs
+
+Me@Asus MINGW64 /c/Users/ME/jm23dt.github.io/COP4020/assignment2 (master)
+$ git status > docs/status.txt
+
+Me@Asus MINGW64 /c/Users/ME/jm23dt.github.io/COP4020/assignment2 (master)
+$ git add -A
+warning: in the working copy of 'docs/status.txt', LF will be replaced by CRLF the next time Git touches it
+
+Me@Asus MINGW64 /c/Users/ME/jm23dt.github.io/COP4020/assignment2 (master)
+$ git commit -m "Adding status.txt"
+[master e3bfa22] Adding status.txt
+ 1 file changed, 8 insertions(+)
+ create mode 100644 docs/status.txt
+
+Me@Asus MINGW64 /c/Users/ME/jm23dt.github.io/COP4020/assignment2 (master)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 20 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 492 bytes | 492.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/jm23dt/assignment2.git
+   9bcc4da..e3bfa22  master -> master
+
+How many commits have been done to the repository (not only by you, but by anyone) so far? Write the git command you used to get this information (4 points)
+6
+git log
+
+When was the README.md  file modified last? Write the git command you used to get this information (4 points)
+Fri Oct 24 20:37:02 2025 -0400
+git log README.md
+
+Mention two reasons why branches are used in a Git repository (4 points)
+To work on projects without effecting the main branch.
+To try new ideas with a project.
+
+What is the difference between git log and git status? (4 points)
+git log shows a history of commits and git status shows what is different in the working directory.
+
+What command would you use to see the commits where “Vehicle.h” was one of the committed files? (4 points)
+git log --follow Vehicle.h
+
+What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --grep="file"
+
+In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+Inheritance means the new class acquires the properties of the base class.
+Polymorphism means inherited methods can be overridden to perform different tasks.
+Encapsulation means that only trusted members can access private data.
+
+
+
+9.  What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration manager” workflow? (5 points)
+The lieutenant between the dictator on developer is the main difference. The integration manager handles the roles of both dictator and lieutenant.
+
+10. How would a team of 100 developers benefit from following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+There are two levels of supervision before anything gets to the blessed repository. At a large scale such as 100 developers, this would prevent corruption in the repository that everyone is drawing from.
+
